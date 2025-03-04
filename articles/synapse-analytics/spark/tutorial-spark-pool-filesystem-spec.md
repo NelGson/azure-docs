@@ -114,7 +114,7 @@ FSSPEC can read/write ADLS data by specifying the linked service name.
 
    # To write data
    import fsspec
-   import pandas
+   import pandas 
    
    linked_service_name = '' #Provide exact Linked Service Name
    
@@ -135,11 +135,13 @@ Run the following code.
 
    > [!NOTE]
    > Update the file URL in this script before running it.
+   > Pleas eensure you import pandas when using the below code snippet. This is critical for proper handling of access tokens
 
    ```PYSPARK
    # Import libraries
    import fsspec
    import os
+   import pandas
    
    # Set variables
    local_file_name = "<local_file_name>"
